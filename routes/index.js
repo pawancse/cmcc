@@ -68,7 +68,7 @@ router.post('/changepassword', function (req, res, next) {
 
 router.post('/status', function (req, res, next) {
   var transporter = nodemailer.createTransport({
-    host: 'smtp.zoho.com',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true, // use SSL
     auth: {
