@@ -72,7 +72,7 @@ router.post('/status', function (req, res, next) {
     port: 465,
     secure: true, // use SSL
     auth: {
-      user: 'pawan.kumar10@zoho.com',
+      user: process.env.mail,
       pass: process.env.mailpass
     }
   });
@@ -80,7 +80,7 @@ router.post('/status', function (req, res, next) {
   var email = list[0];
   var name = list[1];
   var mailOptions = {
-    from: 'pawan.kumar10@zoho.com', // sender address (who sends)
+    from: process.env.mail, // sender address (who sends)
     to: email,
     bcc: ['pawan.bcet54@gmail.com','nishanmadhavan@gmail.com','nithya.greens@gmail.com','dineshramt@gmail.com','tharanyaece@gmail.com','jananisarathi@gmail.com','jeeviparthi1997@gmail.com','kiranasattigigeri@gmail.com','priyapradeep5617@gmail.com','dhasarathys@gmail.com','bhavyateja555@gmail.com','syed.ameer27@gmail.com','premk6491@gmail.com','subbuviswa94.sastra@gmail.com'], // list of receivers (who receives) req.body.child
     subject: 'Task for Today', // Subject line
