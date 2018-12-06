@@ -19,6 +19,7 @@ router.get('/', function (req, res, next) {
 router.post('/login', function (req, res, next) {
   var user = [];
   var email = [];
+  usersEmail = [];
   fs.readFile(__dirname + "/user.json", function (err, list) {
     if (err) throw err;
     jsonList = JSON.parse(list);
@@ -82,7 +83,7 @@ router.post('/status', function (req, res, next) {
   var mailOptions = {
     from: process.env.mail, // sender address (who sends)
     to: email,
-    bcc: ['pawan.bcet54@gmail.com','nishanmadhavan@gmail.com','nithya.greens@gmail.com','dineshramt@gmail.com','tharanyaece@gmail.com','jananisarathi@gmail.com','jeeviparthi1997@gmail.com','kiranasattigigeri@gmail.com','priyapradeep5617@gmail.com','dhasarathys@gmail.com','bhavyateja555@gmail.com','syed.ameer27@gmail.com','premk6491@gmail.com','subbuviswa94.sastra@gmail.com'], // list of receivers (who receives) req.body.child
+    bcc: ['pawan.bcet54@gmail.com','nishanmadhavan@gmail.com','nithya.greens@gmail.com','dineshramt@gmail.com','tharanyaece@gmail.com','jananisarathi@gmail.com','jeeviparthi1997@gmail.com','kiranasattigeri@gmail.com','dhivyacse90@gmail.com','priyapradeep5617@gmail.com','dhasarathys@gmail.com','bhavyateja555@gmail.com','syed.ameer27@gmail.com','premk6491@gmail.com','subbuviswa94.sastra@gmail.com'], // list of receivers (who receives) req.body.child
     subject: 'Task for Today', // Subject line
     //text: req.body.request.text, // plaintext body
     html: 'Dear '+ name +',<p> There is new task for you as below:</p><p>' + req.body.task + '</p> <p> Thanks <br/>Atlas GPO</p>' // html body
