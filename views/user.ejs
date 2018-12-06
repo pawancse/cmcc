@@ -55,7 +55,7 @@
             <label for="name">Select your Child</label>
             <select id="child" name="child">
                 <% usr.forEach(function(item){ %>
-                <option value="<%= item.email %>"><%= item.name %></option>
+                <option value="<%= item.email %>@@<%= item.name %>"><%= item.name %></option>
                 <%})%>
             </select>
 

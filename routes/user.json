@@ -3,6 +3,61 @@
         {
             "name": "Pawan",
             "email": "pawan.bcet54@gmail.com",
+            "password": "Pa@123456"
+        },
+        {
+            "name": "Nishan",
+            "email": "nishanmadhavan@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Nithya",
+            "email": "nithya.greens@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Dinesh",
+            "email": "dineshramt@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Tharanya",
+            "email": "tharanyaece@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Janani",
+            "email": "jananisarathi@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Jeevega",
+            "email": "jeeviparthi1997@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Kiran",
+            "email": "kiranasattigigeri@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Priyanga",
+            "email": "priyapradeep5617@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Dhasarathy",
+            "email": "dhasarathys@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Bhavya",
+            "email": "bhavyateja555@gmail.com",
+            "password": "password"
+        },
+        {
+            "name": "Dhivya",
+            "email": "dhivyacse90@gmail.com",
             "password": "password"
         }
     ]

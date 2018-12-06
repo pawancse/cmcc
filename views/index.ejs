@@ -157,12 +157,12 @@
   </style>
 </head>
 
-<body>
+<body style="padding-left: 80px; padding-top: 50px; align-items: center;">
 
-  <h2 style="float:inherit;">Login or Register</h2>
+  <h2 >Chris Mom - Chris Child </h2>
 
-  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; ">Login</button>
+  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; ">Change Password</button>
 
   <div id="id01" class="modal">
 
@@ -185,7 +185,6 @@
 
         <button type="submit">Login</button>
       </div>
-
       <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       </div>
@@ -194,32 +193,31 @@
 
   <div id="id02" class="modal">
 
-    <form class="modal-content animate" method="POST" action="/register">
+    <form class="modal-content animate" method="POST" action="/changepassword">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <a class='avatar' href="#">Registration</a>
+        <a class='avatar' href="#">Change Password</a> 
       </div>
 
       <div class="container">
-        <label for="name">
-          <b>Name</b>
-        </label>
-        <input type="text" placeholder="Enter Your Name" name="name" required>
         <label for="uname">
           <b>Email</b>
         </label>
         <input type="text" placeholder="abc@youremail.com" name="email" required>
 
         <label for="psw">
-          <b>Password</b>
+          <b>Existing Password</b>
         </label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="epsw" required>
+        <label for="psw">
+          <b>New Password</b>
+        </label>
+        <input type="password" placeholder="Enter Password" name="npsw" required>
 
-        <button type="submit">Register</button>
+        <button type="submit">Change Password</button>
       </div>
-
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       </div>
     </form>
   </div>
