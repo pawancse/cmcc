@@ -91,7 +91,7 @@ router.post('/status', function (req, res, next) {
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);
-      res.send(error);
+      res.send(error + '; Email:'+process.env.mail);
     } else {
       res.render('sendSuccess');
     }
