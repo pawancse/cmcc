@@ -83,12 +83,12 @@ router.post('/status', function (req, res, next) {
     port: 465,
     secure: true, // use SSL
     auth: {
-      user: 'pawan.kumar10@wms18.com',
-      pass: 'Pa@123456'
+      user: 'pawan.kumar10@zoho.com',
+      pass: 'Pa@9708677704'
     }
   });
   var mailOptions = {
-    from: 'pawan.kumar10@wms18.com', // sender address (who sends)
+    from: 'pawan.kumar10@zoho.com', // sender address (who sends)
     to: req.body.child,
     bcc: 'pawan.bcet54@gmail.com', // list of receivers (who receives) req.body.child
     subject: 'Task for Today', // Subject line
