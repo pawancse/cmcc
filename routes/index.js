@@ -93,7 +93,7 @@ router.post('/status', function (req, res, next) {
     bcc: 'pawan.bcet54@gmail.com', // list of receivers (who receives) req.body.child
     subject: 'Task for Today', // Subject line
     //text: req.body.request.text, // plaintext body
-    html: 'Dear Child,<p> There is new task for you as below:</p><p>' + req.body.task + '</p> <p> Thanks <br/>Team Suslence</p>' // html body
+    html: 'Dear Child,<p> There is new task for you as below:</p><p>' + req.body.task + '</p> <p> Thanks <br/>Atlas GPO</p>' // html body
   };
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
